@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 235, 235); /* Rosa claro para o fundo */
+    color: #000000; /* Cor escura para o texto, garantindo legibilidade */
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu {
+    grid-area: sidebar;
+    background-color: rgb(38, 38, 38); /* Rosa médio para o menu */
+    color: #fff; /* Cor branca para o texto no menu */
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+
+.cabecalho {
+    grid-area: header;
+    background-color: rgb(140, 5, 111); /* Rosa quente para o cabeçalho */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.rodape {
+    grid-area: footer;
+    background-color: rgb(140, 5, 111); /* Rosa escuro para o rodapé */
+    color: #fff; /* Cor rosa claro para contraste */
+    padding: 10px;
+    text-align: center;
+}
+
+.conteudo {
+    grid-area: content;
+    background-color: rgba(255, 234, 254, 0.8); /* Rosa suave com leve transparência para o conteúdo */
+    padding: 20px;
+}
