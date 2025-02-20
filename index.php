@@ -8,27 +8,24 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <div class="container">
     <header class="cabecalho">
         <h2>Sistema de Controle de Faltas</h2>
     </header>
 
-    <aside>
-        <ul type="circle">
-            <li>Home</li>
-            <li>Usuário</li>
-            <li>Configurações</li>
+    <aside class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Usuário</a></li>
+            <li><a href="#">Configurações</a></li>
         </ul>
     </aside>
-
-    <header>
-    </header>
-
-    <main>
+         <main class="conteudo">>
         <h3>Área de trabalho</h3>
     </main>
-
     <footer>
         <p>&copy 2023. Todos os direitos reservados.</p>
-    </footer>
-</body>
+        </footer>
+    </div>
+  </body>
 </html>
